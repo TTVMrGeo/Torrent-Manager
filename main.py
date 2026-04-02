@@ -14,8 +14,15 @@ class torrent_management():
         json.dump(data, open(path, "w"), indent=4)
 
     def name(self, link):
-        return(re.split(r"\[[^\]]*\]", parse_qs(urlparse(link).query)['dn'][0])[1].strip())
-
+        flags = ["1080p", "REPACK", "NF", "WEB-DL", "DUAL", "AAC2.0", "H.264", "ABMA", "DDP2.0", "H", "264-VARYG", "AMZN", "HVEC", "10-bit", "HDR", "Dolby Vision", "Remux", "FLAC", "Opus", "AAC", "E-AC3", "TrueHD", "DTS", "BluRay", "WEB-DL", "DVD", "MULTI", "DUBBED"]
+        for item in re.split(r"\[[^\]]*\]", parse_qs(urlparse(link).query)['dn'][0]):
+            if item != '':
+                for name in re.split(r"\([^)]*\)", item.strip()):
+                    if name != '':
+                        for flag in flags:
+                            name = name.replace(flag, "")
+                        return name.strip()
+                
     def save(self, link):
         saved = self.load(self.saved_path)
         saved[self.name(link)] = link
