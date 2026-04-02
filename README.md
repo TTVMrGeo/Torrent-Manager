@@ -1,10 +1,9 @@
 # Setup
 
-Clone repo:
-
+Clone repo:</br>
 ```git clone https://github.com/TTVMrGeo/Torrent-Manager.git```
 
-Install requirements:
+##Install requirements:
 
 You need mpv and [webtorrent-mpv-hook](https://github.com/mrxdst/webtorrent-mpv-hook)</br>
 For webtorrent-mpv-hook, setup a config file and set your cache directory, set this in the app settings too
