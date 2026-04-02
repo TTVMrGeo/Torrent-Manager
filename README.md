@@ -24,10 +24,10 @@ Running the app:
 ```
 # WHILE IN THE PROGRAM FOLDER
 
-Windows:
+# Windows:
 python app.py
 
-linux:
+# Linux:
 source env/bin/activate
 python app.py
 ```
