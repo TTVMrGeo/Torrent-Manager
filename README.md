@@ -6,8 +6,8 @@ Clone repo:
 
 Install requirements:
 
-you need mpv and [webtorrent-mpv-hook](https://github.com/mrxdst/webtorrent-mpv-hook)
-for webtorrent-mpv-hook, setup a config file and set your cache directory, set this in the app settings too
+You need mpv and [webtorrent-mpv-hook](https://github.com/mrxdst/webtorrent-mpv-hook)
+For webtorrent-mpv-hook, setup a config file and set your cache directory, set this in the app settings too
 
 ```
 # If on windows or mac:
